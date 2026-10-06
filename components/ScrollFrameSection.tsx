@@ -410,13 +410,17 @@ gsap.registerPlugin(ScrollTrigger);
 /* -------------------------------------------------------------------------- */
 
 // /public/scroll-frames/frames_001.jpg … frames_120.jpg
+const CDN = process.env.NEXT_PUBLIC_CDN_URL;
 const FRAME_COUNT = 200;
-const FRAME_DIR = "/frames/frame-2";
+const FRAME_DIR = `${CDN}/frames`;
+const VIDEO_MP4 = `${CDN}/video/video-sec-2.mp4`;
+
+// const FRAME_DIR = "/frames/frame-2";
 const frameSrc = (index: number) =>
   `${FRAME_DIR}/frame_${String(index + 1).padStart(3, "0")}.png`;
 
 // Mobile / tablet video: /public/video-sec-2.mp4
-const VIDEO_MP4 = "/video-sec-2.mp4";
+// const VIDEO_MP4 = "/video-sec-2.mp4";
 
 // Aspect ratio of your video / frames (width ÷ height). 16:9 = 16 / 9.
 const VIDEO_RATIO = 18 / 9;

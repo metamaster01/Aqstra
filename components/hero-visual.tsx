@@ -14,9 +14,12 @@ import { useTheme } from "next-themes";
  *   /images/hero-dark.png    – poster for dark theme
  *   /videos/hero-video.webm  – looping autoplay clip (either theme / both)
  */
-const POSTER_LIGHT = "/hero-image.png";
-const POSTER_DARK = "/hero-image.png";
-const VIDEO_SRC = "/hero-video.webm";
+
+const CDN = process.env.NEXT_PUBLIC_CDN_URL;
+
+const POSTER_LIGHT = `${CDN}/images/hero-image.png`;
+const POSTER_DARK = `${CDN}/images/hero-image.png`;
+const VIDEO_SRC = `${CDN}/video/hero-video.webm`;
 
 export function HeroVisual() {
   const { resolvedTheme } = useTheme();

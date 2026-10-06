@@ -1260,11 +1260,13 @@ import { ContactShadows, Environment, useGLTF, useTexture } from "@react-three/d
 import { useInView, useReducedMotion, useScroll, type MotionValue } from "framer-motion";
 
 /* ───────────────────────── CONFIG (tweak here) ───────────────────────── */
+const CDN = process.env.NEXT_PUBLIC_CDN_URL;
 
-const MODEL_SRC = "/macbook-3.glb";
-const POSTER_LIGHT = "/poster-light.png";
-const POSTER_DARK = "/poster-dark.png";
-const VIDEO_SRC = "/demo.mp4";
+
+const MODEL_SRC = `${CDN}/video/model/macbook-3.glb`;
+const POSTER_LIGHT = `${CDN}/images/poster-light.png`;
+const POSTER_DARK = `${CDN}/images/poster-dark.png`;
+const VIDEO_SRC = `${CDN}/video/demo.mp4`;
 const HAS_VIDEO = true;
 
 const MOBILE_MODE: "3d" | "video" = "3d"; // "3d" = still laptop + video, "video" = video only
@@ -1708,6 +1710,8 @@ function Laptop({
       rig.mat.map = poster;
     }
   });
+
+  useGLTF.preload(MODEL_SRC);
 
   return (
     <>
