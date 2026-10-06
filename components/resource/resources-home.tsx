@@ -53,7 +53,7 @@ export function ResourcesHome() {
 
         <div className={`${CONTAINER} pb-12 pt-16 text-center sm:pb-16 sm:pt-24`}>
           <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-primary dark:text-white">
-            MetaMaster Resources
+            Aqstra Resources
           </p>
 
           <h1 className="mx-auto max-w-[760px] text-balance font-display text-[36px] font-extrabold leading-[1.08] tracking-[-0.03em] sm:text-[46px] lg:text-[54px]">
