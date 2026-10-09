@@ -105,7 +105,6 @@
 
 
 
-
 "use client";
 
 import Link from "next/link";
@@ -121,22 +120,43 @@ import { TextHoverEffect } from "@/components/ui/text-hover-effect";
  * sits directly under it with a 2px primary-colored top border, matching
  * the blue divider line in the reference image.
  */
-const FOOTER_COLUMNS = [
+// href "#" = no destination yet; swap it in when that page exists.
+const FOOTER_COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
   {
     title: "Product",
-    links: ["Lead Intelligence", "Lead Discovery", "Lead Scoring", "Data Enrichment", "Campaign Tools"],
+    links: [
+      { label: "Lead Intelligence", href: "/product" },
+      { label: "Lead Discovery", href: "/product#lead-discovery" },
+      { label: "Lead Scoring", href: "/product#lead-scoring" },
+      { label: "Data Enrichment", href: "/product" },
+      { label: "Campaign Tools", href: "/product#campaign-tools" },
+    ],
   },
-  {
+ {
     title: "Solutions",
-    links: ["Sales Teams", "Business Development", "Growth Teams", "Outreach"],
+    links: [
+      { label: "Sales Teams", href: "/solutions/sales" },
+      { label: "Business Development", href: "/solutions/business-development" },
+      { label: "Growth Teams", href: "/solutions/growth" },
+      { label: "Outreach", href: "/solutions/outreach" },
+    ],
   },
   {
     title: "Resources",
-    links: ["Guides", "Knowledge Base", "Insights", "Industry News"],
+    links: [
+      { label: "Guides", href: "/resource/all?type=Guide" },
+      { label: "Knowledge Base", href: "/docs/introduction" },
+      { label: "Insights", href: "/resource/all?type=Article" },
+      { label: "Industry News", href: "/news" },
+    ],
   },
   {
     title: "Company",
-    links: ["About", "Contact", "Pricing"],
+    links: [
+      { label: "About", href: "/#about" },
+      { label: "Contact", href: "/contact" },
+      { label: "Pricing", href: "/pricing" },
+    ],
   },
 ];
 
@@ -171,9 +191,9 @@ export function FooterSection() {
               <h4 className="text-[10.5px] font-semibold uppercase tracking-[0.1em] text-white/45">{col.title}</h4>
               <ul className="mt-4 space-y-2.5">
                 {col.links.map((link) => (
-                  <li key={link}>
-                    <Link href="#" className="text-[13px] text-white/70 transition-colors hover:text-primary">
-                      {link}
+                  <li key={link.label}>
+                    <Link href={link.href} className="text-[13px] text-white/70 transition-colors hover:text-primary">
+                      {link.label}
                     </Link>
                   </li>
                 ))}
@@ -185,10 +205,10 @@ export function FooterSection() {
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
           <p className="text-[12.5px] text-white/40">© {year} MetaMaster. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <Link href="#" className="text-[12.5px] text-white/40 transition-colors hover:text-white/70">
+            <Link href="/privacy-policy" className="text-[12.5px] text-white/40 transition-colors hover:text-white/70">
               Privacy Policy
             </Link>
-            <Link href="#" className="text-[12.5px] text-white/40 transition-colors hover:text-white/70">
+            <Link href="/terms" className="text-[12.5px] text-white/40 transition-colors hover:text-white/70">
               Terms of Service
             </Link>
           </div>
