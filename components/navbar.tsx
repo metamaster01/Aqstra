@@ -126,6 +126,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import {
@@ -305,11 +306,12 @@ export function Navbar() {
         className="mx-auto flex h-[58px] max-w-[1400px] items-center justify-between px-6 sm:px-10 lg:px-20"
         aria-label="Main"
       >
-        <Link href="/" className="font-display text-[19px] font-extrabold tracking-tight" aria-label="AQSTRA home">
-          AQSTRA
+        <Link href="/" className="flex items-center" aria-label="AQSTRA home">
+          <Image src="/logo-2.png" alt="AQSTRA" width={160} height={60} className="h-14 w-auto dark:hidden" priority />
+          <Image src="/logo-3.png" alt="AQSTRA" width={140} height={40} className="hidden h-14 w-auto dark:block" priority />
         </Link>
 
-        <ul className="hidden items-center gap-8 lg:flex xl:gap-10">
+        <ul className="hidden items-center gap-6 lg:flex xl:gap-8">
           {links.map((l) =>
             l.children ? (
               <DesktopDropdown key={l.label} link={l} />

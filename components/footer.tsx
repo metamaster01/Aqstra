@@ -174,7 +174,7 @@ export function FooterSection() {
             transition={{ duration: 0.5 }}
             className="col-span-2 sm:col-span-3 lg:col-span-1"
           >
-            <span className="font-display text-[19px] font-extrabold tracking-tight text-white">AQSTRA</span>
+            <img src="/logo-3.png" alt="AQSTRA" className="h-14 w-auto object-contain" />
             <p className="mt-3 max-w-[220px] text-[13px] leading-[1.6] text-white/45">
               Precision lead intelligence for modern sales teams.
             </p>
