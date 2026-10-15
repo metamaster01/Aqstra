@@ -307,8 +307,8 @@ export function Navbar() {
         aria-label="Main"
       >
         <Link href="/" className="flex items-center" aria-label="AQSTRA home">
-          <Image src="/logo-2.png" alt="AQSTRA" width={160} height={60} className="h-14 w-auto dark:hidden" priority />
-          <Image src="/logo-3.png" alt="AQSTRA" width={140} height={40} className="hidden h-14 w-auto dark:block" priority />
+          <Image src="/logo-2.png" alt="AQSTRA" width={160} height={60} className="h-12 sm:h-12 md:h-14 w-auto dark:hidden" priority />
+          <Image src="/logo-3.png" alt="AQSTRA" width={140} height={40} className="hidden h-12 sm:h-12 md:h-14 w-auto dark:block" priority />
         </Link>
 
         <ul className="hidden items-center gap-6 lg:flex xl:gap-8">
