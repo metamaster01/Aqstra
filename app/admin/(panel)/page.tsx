@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { ArrowRight, BookOpen, ExternalLink, FolderTree, Newspaper, Plus, type LucideIcon } from "lucide-react";
+import { ArrowRight, BookOpen, ExternalLink, FolderTree, Mail, Newspaper, Plus, Target, type LucideIcon } from "lucide-react";
 import { requireAdmin } from "@/lib/admin/auth";
 import { getDashboardData } from "@/lib/admin/queries";
+import { getInboxSummary } from "@/lib/admin/inbox";
 import { Badge, PageHeader, btn, cardClass, formatDate } from "@/components/admin/ui";
 
 export const metadata = { title: "Dashboard" };
@@ -39,7 +40,7 @@ function Stat({
 
 export default async function DashboardPage() {
   const admin = await requireAdmin("/admin");
-  const data = await getDashboardData();
+  const [data, inbox] = await Promise.all([getDashboardData(), getInboxSummary()]);
 
   const drafts = data.docs.drafts + data.resources.drafts;
 
@@ -69,6 +70,23 @@ export default async function DashboardPage() {
           value={drafts}
           sub={drafts === 0 ? "nothing to publish" : "not visible to visitors"}
           href={data.docs.drafts >= data.resources.drafts ? "/admin/docs?status=draft" : "/admin/resources?status=draft"}
+        />
+      </div>
+
+      <div className="mt-3 grid grid-cols-1 gap-3 sm:mt-4 sm:grid-cols-2 sm:gap-4">
+        <Stat
+          icon={Mail}
+          label="Messages"
+          value={inbox.messages.new}
+          sub={`new · ${inbox.messages.total} in total`}
+          href="/admin/messages?status=new"
+        />
+        <Stat
+          icon={Target}
+          label="Demo requests"
+          value={inbox.demos.new}
+          sub={`new · ${inbox.demos.total} in total`}
+          href="/admin/demo-requests?status=new"
         />
       </div>
 
@@ -112,6 +130,12 @@ export default async function DashboardPage() {
             </Link>
             <Link href="/admin/resources/new" className={btn("secondary")}>
               <Plus className="size-4" aria-hidden /> New resource
+            </Link>
+            <Link href="/admin/messages" className={btn("secondary")}>
+              <Mail className="size-4" aria-hidden /> Open messages
+            </Link>
+            <Link href="/admin/demo-requests" className={btn("secondary")}>
+              <Target className="size-4" aria-hidden /> Open demo requests
             </Link>
             <Link href="/admin/categories" className={btn("secondary")}>
               <FolderTree className="size-4" aria-hidden /> Manage categories
