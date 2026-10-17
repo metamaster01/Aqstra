@@ -41,7 +41,7 @@ export function SolutionHero({ solution }: { solution: Solution }) {
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
-              href="#demo"
+              href="/get-a-demo"
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-[0_8px_20px_-8px_rgba(37,99,235,.6)] transition-all hover:-translate-y-0.5 hover:bg-primary-hover"
             >
               Book a Demo <ArrowRight className="size-4" />

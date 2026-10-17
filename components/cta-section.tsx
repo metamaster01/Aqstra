@@ -53,7 +53,7 @@ export function CtaSection() {
             Get Started <ArrowRight className="size-4" />
           </Link>
           <Link
-            href="#demo"
+            href="/get-a-demo"
             className="inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/10"
           >
             Book a Demo <ArrowRight className="size-4" />

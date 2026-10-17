@@ -50,7 +50,7 @@ export function Hero() {
               Get Started <ArrowRight className="size-4" />
             </Link>
             <Link
-              href="#demo"
+              href="/get-a-demo"
               className="inline-flex items-center gap-2 rounded-lg border border-border bg-card/70 px-5 py-3 text-sm font-semibold transition-all hover:-translate-y-0.5 hover:border-primary dark:border-foreground/70 dark:bg-transparent"
             >
               Book a Demo <ArrowRight className="size-4" />

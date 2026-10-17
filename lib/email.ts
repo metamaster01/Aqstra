@@ -13,21 +13,32 @@ import { LEGAL } from "@/lib/legal";
 const RESEND_URL = "https://api.resend.com/emails";
 const SITE = `https://${LEGAL.website}`;
 
-const fromAddress = () => process.env.CONTACT_FROM_EMAIL || "AQSTRA <onboarding@resend.dev>";
-const notifyAddresses = () =>
-  (process.env.CONTACT_NOTIFY_EMAIL || CONTACT.salesEmail)
+const fromAddress = () => {
+  const from = process.env.CONTACT_FROM_EMAIL;
+  if (!from) {
+    // Resend's test sender only delivers to your own Resend account email (otherwise a 403).
+    console.warn("CONTACT_FROM_EMAIL is not set at runtime: using onboarding@resend.dev (testing only). Add it under Variables and Secrets, not Build variables.");
+    return "AQSTRA <onboarding@resend.dev>";
+  }
+  return from;
+};
+export const notifyAddresses = () => {
+  const to = process.env.CONTACT_NOTIFY_EMAIL;
+  if (!to) console.warn(`CONTACT_NOTIFY_EMAIL is not set at runtime: falling back to ${CONTACT.salesEmail}.`);
+  return (to || CONTACT.salesEmail)
     .split(",")
     .map((s) => s.trim())
     .filter(Boolean);
+};
 
 /* --------------------------------- helpers -------------------------------- */
 
-const esc = (s: string) =>
+export const esc = (s: string) =>
   s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
-const oneLine = (s: string, max = 150) => s.replace(/[\r\n\t]+/g, " ").trim().slice(0, max);
+export const oneLine = (s: string, max = 150) => s.replace(/[\r\n\t]+/g, " ").trim().slice(0, max);
 const topicLabel = (v: string) => TOPICS.find((t) => t.value === v)?.label ?? v;
 
-async function sendEmail(args: {
+export async function sendEmail(args: {
   to: string | string[];
   subject: string;
   html: string;
@@ -70,7 +81,7 @@ async function sendEmail(args: {
 
 /* -------------------------------- templates ------------------------------- */
 
-function shell(preheader: string, inner: string) {
+export function shell(preheader: string, inner: string) {
   return `<!doctype html><html lang="en"><body style="margin:0;padding:24px 12px;background:#f3f6fb;font-family:Inter,Arial,Helvetica,sans-serif;color:#0f172a;">
 <div style="display:none;max-height:0;overflow:hidden;opacity:0;">${esc(preheader)}</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center">
@@ -82,10 +93,10 @@ function shell(preheader: string, inner: string) {
 </td></tr></table></body></html>`;
 }
 
-const row = (label: string, value: string) =>
+export const row = (label: string, value: string) =>
   `<tr><td style="padding:6px 16px 6px 0;color:#64748b;font-size:13px;vertical-align:top;white-space:nowrap;">${label}</td><td style="padding:6px 0;font-size:14px;">${value}</td></tr>`;
 
-const messageBox = (msg: string) =>
+export const messageBox = (msg: string) =>
   `<div style="margin-top:6px;padding:14px 16px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;font-size:14px;white-space:pre-wrap;word-break:break-word;">${esc(msg)}</div>`;
 
 function adminEmail(d: ContactInput, submittedAt: Date) {

@@ -1816,6 +1816,8 @@ export function MacbookShowcase() {
       className={`relative bg-[#050d1f] text-white ${
         reduce ? "md:h-[calc(100svh-58px)]" : "md:h-[360vh]"
       }`}
+
+      id="demo-showcase"
     >
       <div className="relative overflow-hidden pb-8 md:sticky md:top-[58px] md:h-[calc(100svh-58px)] md:pb-0">
         <div

@@ -333,7 +333,7 @@ export function Navbar() {
             Log in
           </Link>
           <Link
-            href="#demo"
+            href="/get-a-demo"
             className="inline-flex items-center gap-1.5 rounded-lg bg-primary px-4 py-2 text-[13px] font-semibold text-primary-foreground shadow-sm transition-colors hover:bg-primary-hover"
           >
             Book a Demo <ArrowRight className="size-3.5" />
@@ -424,7 +424,7 @@ export function Navbar() {
                 <Link href="/login" className="flex-1 rounded-lg border border-border py-2.5 text-center text-sm font-medium">
                   Log in
                 </Link>
-                <Link href="#demo" className="flex-1 rounded-lg bg-primary py-2.5 text-center text-sm font-semibold text-white">
+                <Link href="/get-a-demo" className="flex-1 rounded-lg bg-primary py-2.5 text-center text-sm font-semibold text-white">
                   Book a Demo
                 </Link>
               </li>

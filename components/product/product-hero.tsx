@@ -87,13 +87,13 @@ export function ProductHero() {
           className="mt-8 flex flex-wrap items-center justify-center gap-3"
         >
           <Link
-            href="#start"
+            href="/get-a-demo"
             className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-[0_8px_20px_-8px_rgba(37,99,235,.6)] transition-all hover:-translate-y-0.5 hover:bg-primary-hover"
           >
             Start Free Trial <ArrowRight className="size-4" />
           </Link>
           <Link
-            href="#demo"
+            href="/#demo-showcase"
             className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-5 py-3 text-sm font-semibold transition-all hover:-translate-y-0.5 hover:border-primary dark:bg-transparent"
           >
             Watch Demo <ArrowRight className="size-4" />
