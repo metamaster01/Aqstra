@@ -145,7 +145,7 @@ export function StatsSection() {
             transition={{ duration: 0.6, delay: 0.08 }}
             className="mt-3 font-display text-[28px] font-bold leading-[1.25] text-white sm:text-[34px]"
           >
-            500M+ leads generated. Proven to drive results
+            5M+ leads generated. Proven to drive results
           </motion.h2>
         </div>
 

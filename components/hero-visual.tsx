@@ -19,7 +19,8 @@ const CDN = process.env.NEXT_PUBLIC_CDN_URL;
 
 const POSTER_LIGHT = `${CDN}/images/hero-image.png`;
 const POSTER_DARK = `${CDN}/images/hero-image.png`;
-const VIDEO_SRC = `${CDN}/video/hero-video.webm`;
+const VIDEO_SRC = `${CDN}/video/hero-video-bgremove.webm`;
+// const VIDEO_SRC = '/hero-video-bgremove.webm';
 
 export function HeroVisual() {
   const { resolvedTheme } = useTheme();
