@@ -413,7 +413,7 @@ gsap.registerPlugin(ScrollTrigger);
 const CDN = process.env.NEXT_PUBLIC_CDN_URL;
 const FRAME_COUNT = 200;
 const FRAME_DIR = `${CDN}/frames/frame-v2`;
-const VIDEO_MP4 = `${CDN}/video/video-sec-2.mp4`;
+const VIDEO_MP4 = `${CDN}/video/video-sec-3.mp4`;
 
 // const FRAME_DIR = "/frames/frame-2";
 const frameSrc = (index: number) =>
