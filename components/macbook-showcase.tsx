@@ -1264,8 +1264,8 @@ const CDN = process.env.NEXT_PUBLIC_CDN_URL;
 
 
 const MODEL_SRC = `${CDN}/video/model/macbook-3.glb`;
-const POSTER_LIGHT = `${CDN}/images/poster-light.png`;
-const POSTER_DARK = `${CDN}/images/poster-dark.png`;
+const POSTER_LIGHT = `${CDN}/images/poster-light.avif`;
+const POSTER_DARK = `${CDN}/images/poster-dark.avif`;
 const VIDEO_SRC = `${CDN}/video/demo.mp4`;
 const HAS_VIDEO = true;
 

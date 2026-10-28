@@ -188,7 +188,7 @@ export function FooterSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.08 * (i + 1) }}
             >
-              <h4 className="text-[10.5px] font-semibold uppercase tracking-[0.1em] text-white/45">{col.title}</h4>
+              <h2 className="text-[10.5px] font-semibold uppercase tracking-[0.1em] text-white/45">{col.title}</h2>
               <ul className="mt-4 space-y-2.5">
                 {col.links.map((link) => (
                   <li key={link.label}>

@@ -17,8 +17,8 @@ import { useTheme } from "next-themes";
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL;
 
-const POSTER_LIGHT = `${CDN}/images/hero-image.png`;
-const POSTER_DARK = `${CDN}/images/hero-image.png`;
+const POSTER_LIGHT = `${CDN}/images/hero-image.avif`;
+const POSTER_DARK = `${CDN}/images/hero-image.avif`;
 const VIDEO_SRC = `${CDN}/video/hero-video-bgremove.webm`;
 // const VIDEO_SRC = '/hero-video-bgremove.webm';
 
@@ -27,9 +27,28 @@ export function HeroVisual() {
   const [mounted, setMounted] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
   const [videoFailed, setVideoFailed] = useState(false);
+  const [videoRequested, setVideoRequested] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => setMounted(true), []);
+
+  useEffect(() => {
+    let timeout: ReturnType<typeof setTimeout>;
+    const requestVideo = () => {
+      timeout = setTimeout(() => setVideoRequested(true), 800);
+    };
+
+    if (document.readyState === "complete") {
+      requestVideo();
+    } else {
+      window.addEventListener("load", requestVideo, { once: true });
+    }
+
+    return () => {
+      window.removeEventListener("load", requestVideo);
+      clearTimeout(timeout);
+    };
+  }, []);
 
   useEffect(() => {
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -50,25 +69,26 @@ export function HeroVisual() {
     <div className="relative mx-auto aspect-[1.5/1] w-full max-w-[700px] overflow-hidden">
       {/* Poster image: always present so there is never a blank frame while the
           video loads, fails to load, or hasn't been added to /public yet. */}
+
+          
       <Image
         src={poster}
         alt="AQSTRA MetaMaster platform preview"
         fill
         priority
+        fetchPriority="high"
         sizes="(min-width: 1024px) 600px, 90vw"
         className={`object-cover transition-opacity duration-500 ${videoReady && !videoFailed ? "opacity-0" : "opacity-100"}`}
       />
 
-      {!videoFailed && (
+      {videoRequested && !videoFailed && (
         <video
           ref={videoRef}
           className={`absolute inset-0 size-full object-cover transition-opacity duration-500 ${videoReady ? "opacity-100" : "opacity-0"}`}
           muted
           loop
           playsInline
-          autoPlay
           preload="metadata"
-          poster={poster}
           onCanPlay={() => setVideoReady(true)}
           onError={() => setVideoFailed(true)}
         >
