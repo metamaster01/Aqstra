@@ -77,8 +77,9 @@ export function HeroVisual() {
         fill
         priority
         fetchPriority="high"
+        decoding="sync"
         sizes="(min-width: 1024px) 600px, 90vw"
-        className={`object-cover transition-opacity duration-500 ${videoReady && !videoFailed ? "opacity-0" : "opacity-100"}`}
+        className={`object-cover ${videoReady && !videoFailed ? "opacity-0" : "opacity-100"}`}
       />
 
       {videoRequested && !videoFailed && (
