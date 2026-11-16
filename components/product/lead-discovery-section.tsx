@@ -42,7 +42,7 @@ export function LeadDiscoverySection() {
               transition={{ duration: 0.6, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
               className="mt-4 max-w-[440px] text-[14.5px] leading-[1.75] text-muted"
             >
-              Stop wasting time on generic prospect lists. MetaMaster helps you find companies and contacts that
+              Stop wasting time on generic prospect lists. AQSTRA helps you find companies and contacts that
               actually fit your target criteria.
             </motion.p>
 

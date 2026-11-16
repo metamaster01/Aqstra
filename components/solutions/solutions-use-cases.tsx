@@ -49,7 +49,7 @@ export function SolutionsUseCases() {
             Common use cases
           </h2>
           <p className="mx-auto mt-3 max-w-[480px] text-balance text-sm leading-[1.7] text-muted sm:text-[15px]">
-            See how teams use MetaMaster to solve real prospecting challenges.
+            See how teams use AQSTRA to solve real prospecting challenges.
           </p>
         </Reveal>
 

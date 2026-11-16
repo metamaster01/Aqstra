@@ -236,7 +236,7 @@ export function LatestResources() {
           className="flex flex-wrap items-end justify-between gap-x-6 gap-y-2"
         >
           <h2 id="latest-title" className="font-display font-extrabold text-foreground" style={h2Style}>
-            Latest from MetaMaster
+            Latest from AQSTRA
           </h2>
           <Link
             href="/resource/all"

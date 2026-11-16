@@ -6,7 +6,7 @@ export function LeadScoringSection() {
       id="lead-scoring"
       imagePosition="left"
       title="Score and prioritize your best opportunities"
-      description="Not all leads are created equal. MetaMaster scores every prospect so your team knows exactly who to contact first."
+      description="Not all leads are created equal. AQSTRA scores every prospect so your team knows exactly who to contact first."
       checklist={[
         "AI-powered lead scoring based on fit and intent",
         "Custom scoring rules for your business",

@@ -1849,7 +1849,7 @@ export function MacbookShowcase() {
         ) : (
           <div
             role="img"
-            aria-label="MacBook showing the MetaMaster prospect list"
+            aria-label="MacBook showing the AQSTRA prospect list"
             className="relative h-[72vw] max-h-[460px] min-h-[280px] md:absolute md:inset-0 md:h-auto md:max-h-none md:min-h-0"
           >
             {mode && (

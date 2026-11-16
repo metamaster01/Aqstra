@@ -7,7 +7,7 @@
  */
 
 export const LEGAL = {
-  company: "MetaMaster",
+  company: "AQSTRA",
   product: "AQSTRA",
   website: "aqstra.com",
   supportEmail: "support@aqstra.com", // TODO: confirm real address

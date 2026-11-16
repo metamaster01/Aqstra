@@ -73,7 +73,7 @@ export function HeroVisual() {
           
       <Image
         src={poster}
-        alt="AQSTRA MetaMaster platform preview"
+        alt="AQSTRA platform preview"
         fill
         priority
         fetchPriority="high"

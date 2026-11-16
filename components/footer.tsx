@@ -203,7 +203,7 @@ export function FooterSection() {
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
-          <p className="text-[12.5px] text-white/40">© {year} MetaMaster. All rights reserved.</p>
+          <p className="text-[12.5px] text-white/40">© {year} AQSTRA. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy-policy" className="text-[12.5px] text-white/40 transition-colors hover:text-white/70">
               Privacy Policy

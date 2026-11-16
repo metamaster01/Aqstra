@@ -411,7 +411,7 @@ export function ComparePlans() {
 
 const FAQS = [
   {
-    q: "Can I try MetaMaster before I buy?",
+    q: "Can I try AQSTRA before I buy?",
     a: "Yes. Every plan includes a 14-day free trial, with no credit card required. You can explore lead discovery, filtering, and qualification before choosing a plan.",
   },
   {

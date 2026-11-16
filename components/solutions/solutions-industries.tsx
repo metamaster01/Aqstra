@@ -44,7 +44,7 @@ export function SolutionsIndustries() {
             Built for your industry
           </h2>
           <p className="mx-auto mt-3 max-w-[480px] text-balance text-sm leading-[1.7] text-white/70 sm:text-[15px]">
-            MetaMaster works across sectors—find prospects in your target verticals.
+            AQSTRA works across sectors—find prospects in your target verticals.
           </p>
         </Reveal>
 

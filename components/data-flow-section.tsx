@@ -97,7 +97,7 @@ export function DataFlowSection() {
             transition={{ duration: 0.6, delay: 0.14 }}
             className="mx-auto mt-4 max-w-[480px] text-[14px] leading-[1.75] text-muted"
           >
-            Raw signals pour in from every channel you advertise on. MetaMaster's engine classifies, filters and
+            Raw signals pour in from every channel you advertise on. AQSTRA's engine classifies, filters and
             prioritizes them in real time — then routes clean, qualified leads straight to the team that should act on them.
           </motion.p>
         </div>

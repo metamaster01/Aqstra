@@ -6,7 +6,7 @@ export function ClassificationSection() {
       id="classification"
       imagePosition="left"
       title="Classify and organize prospects automatically"
-      description="MetaMaster analyzes every prospect against your criteria, automatically categorizing them so your team knows exactly who to prioritize."
+      description="AQSTRA analyzes every prospect against your criteria, automatically categorizing them so your team knows exactly who to prioritize."
       checklist={[
         "Auto-classify by industry, role, and seniority",
         "Tag prospects based on custom attributes",

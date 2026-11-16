@@ -85,10 +85,10 @@ export const RESOURCES: Resource[] = [
     accent: "navy",
   },
   {
-    slug: "inside-metamaster-how-we-classify-prospects",
+    slug: "inside-aqstra-how-we-classify-prospects",
     type: "Video",
     tag: "Product",
-    title: "Inside MetaMaster: how prospects get classified",
+    title: "Inside AQSTRA: how prospects get classified",
     description:
       "A short walkthrough of how we discover, classify, and filter prospects for accuracy.",
     readTime: "4 min watch",

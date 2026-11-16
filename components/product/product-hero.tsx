@@ -77,7 +77,7 @@ export function ProductHero() {
           transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto mt-5 max-w-[520px] text-[15px] leading-[1.75] text-muted"
         >
-          MetaMaster gives your team precision lead intelligence—from discovery to qualification to structured outreach campaigns.
+          AQSTRA gives your team precision lead intelligence—from discovery to qualification to structured outreach campaigns.
         </motion.p>
 
         <motion.div

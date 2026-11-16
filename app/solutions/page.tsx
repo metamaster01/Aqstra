@@ -8,9 +8,9 @@ import { CtaSection } from "@/components/cta-section";
 import { FooterSection } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Solutions — AQstra",
+  title: "Solutions — AQSTRA",
   description:
-    "Whether you're in sales, business development, or growth, AQstra adapts to your workflow and helps you find better prospects.",
+    "Whether you're in sales, business development, or growth, AQSTRA adapts to your workflow and helps you find better prospects.",
 };
 
 export default function SolutionsPage() {

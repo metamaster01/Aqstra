@@ -5,9 +5,9 @@ import { ComparePlans, PricingFaq, PricingPlans } from "@/components/pricing/pri
 
 
 export const metadata = {
-  title: "Pricing — AQstra",
+  title: "Pricing — AQSTRA",
   description:
-    "AQstra offers flexible pricing plans to suit your business needs. Choose the plan that fits your team and start discovering better leads today.",
+    "AQSTRA offers flexible pricing plans to suit your business needs. Choose the plan that fits your team and start discovering better leads today.",
 };
 
 export default function PricingPage() {
