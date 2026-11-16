@@ -10,6 +10,7 @@ import { FooterSection } from "@/components/footer";
 import { Workflow } from "@/components/workflow-precision";
 import { CtaSection } from "@/components/cta-section";
 import { WaveDivider } from "@/components/wave-divider";
+import WhoIsAqstraFor from "@/components/WhoIsAqstraFor";
 
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
         <FeaturesInteractive /> 
         <MacbookShowcase />
         <DataFlowSection />
-        <Workflow />
+        {/* <Workflow /> */}
+        <WhoIsAqstraFor />
         <CtaSection />
       </main>
         <WaveDivider />

@@ -11,11 +11,11 @@ interface Step {
 }
 
 const steps: Step[] = [
-  { icon: Search, label: "Discover", tone: "blue" },
-  { icon: FolderOpen, label: "Classify", tone: "lime" },
-  { icon: Filter, label: "Filter", tone: "blue" },
-  { icon: CheckCheck, label: "Qualify", tone: "lime" },
-  { icon: Send, label: "Outreach", tone: "blue" },
+  { icon: Search, label: "Define Audience", tone: "blue" },
+  { icon: FolderOpen, label: "Discover Leads", tone: "lime" },
+  { icon: Filter, label: "Apply Filters", tone: "blue" },
+  { icon: CheckCheck, label: "Review & Organize", tone: "lime" },
+  { icon: Send, label: "Prepare Outreach", tone: "blue" },
 ];
 
 const tones: Record<Step["tone"], string> = {
@@ -26,15 +26,15 @@ const tones: Record<Step["tone"], string> = {
 export function ProcessSection() {
   return (
     <section className="bg-background py-20 sm:py-28">
-      <div className="mx-auto max-w-[900px] px-6 text-center sm:px-10 lg:px-20">
+      <div className="mx-auto max-w-[1200px] px-6 text-center sm:px-10 lg:px-20">
         <motion.h2
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-15% 0px" }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="mx-auto max-w-[560px] font-display text-[28px] font-bold leading-[1.25] tracking-[-0.02em] sm:text-[36px]"
+          className="mx-auto max-w-[640px] font-display text-[28px] font-bold leading-[1.25] tracking-[-0.02em] sm:text-[36px]"
         >
-          From lead discovery to outreach, without the noise.
+          From Millions of Potential Records to a Focused Prospect List.
         </motion.h2>
 
         <motion.p
@@ -44,11 +44,11 @@ export function ProcessSection() {
           transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto mt-5 max-w-[520px] text-[14.5px] leading-[1.75] text-muted"
         >
-          Instead of giving your team massive, unfiltered contact lists, MetaMaster helps create a focused shortlist of prospects that actually match your requirements.
+          Finding potential customers shouldn’t involve endless searching. AQSTRA simplifies discovery with a structured five-step workflow.
         </motion.p>
 
         {/* Desktop / tablet: horizontal row with drawing connector line */}
-        <div className="relative mx-auto mt-16 hidden max-w-[640px] items-start justify-between sm:flex">
+        <div className="relative mx-auto mt-16 hidden max-w-[840px] items-start justify-between sm:flex">
           <ConnectorLine />
           {steps.map((step, i) => (
             <StepItem key={step.label} step={step} index={i} />
@@ -62,6 +62,10 @@ export function ProcessSection() {
             <StepItem key={step.label} step={step} index={i} vertical />
           ))}
         </div>
+
+        <p className="mx-auto mt-12 max-w-[560px] text-[14px] font-medium leading-[1.75] text-foreground/80">
+          Less manual research. More focused discovery. Better-informed business decisions.
+        </p>
       </div>
     </section>
   );

@@ -24,22 +24,22 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="mx-auto grid max-w-[1400px] items-center gap-14 px-6 py-14 sm:px-10 sm:py-20 lg:min-h-[calc(100svh-58px)] lg:grid-cols-[1fr_1.1fr] lg:gap-8 lg:px-20 lg:py-16">
-        <div className="max-w-[560px]">
-          <motion.p {...line(0)} className="mb-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-primary dark:text-white">
-            The MetaMaster Platform
+      <div className="mx-auto grid max-w-[1400px] items-center gap-14 px-6 py-14 sm:px-10 sm:py-20 lg:min-h-[calc(100svh-58px)] lg:grid-cols-[1fr_1.1fr] lg:gap-4 lg:px-14 lg:py-16">
+        <div className="max-w-[520px]">
+          <motion.p {...line(0)} className="mb-5 text-[16px] font-semibold uppercase tracking-[0.14em] text-primary dark:text-white">
+            MEET AQSTRA
           </motion.p>
 
-          <h1 className="font-display text-[44px] font-extrabold leading-[1.06] tracking-[-0.03em] sm:text-[56px] lg:text-[64px]">
+          <h1 className="font-display text-[48px] font-extrabold leading-[1.06] tracking-[-0.03em] sm:text-[56px] lg:text-[60px]">
             <motion.span {...line(1)} className="block">
-              Find the right <span className="dark:text-[#cfd3ea]">leads.</span>
+              Your Smarter <span className="dark:text-[#cfd3ea]">Way</span>
             </motion.span>
-            <motion.span {...line(2)} className="block">Build smarter</motion.span>
-            <motion.span {...line(3)} className="block">outreach.</motion.span>
+            <motion.span {...line(2)} className="block">to discover buisness</motion.span>
+            <motion.span {...line(3)} className="block">opportunity.</motion.span>
           </h1>
 
           <motion.p {...line(4)} className="mt-7 max-w-[440px] text-[17px] leading-[1.75] text-muted">
-            MetaMaster helps you discover, classify, and filter prospects for accuracy—then turn your qualified shortlist into structured outreach campaigns.
+            AQSTRA helps businesses find relevant companies and prospects, then prioritize opportunities that match their ideal customer profile.
           </motion.p>
 
           <motion.div {...line(5)} className="mt-9 flex flex-wrap gap-3">
@@ -47,13 +47,13 @@ export function Hero() {
               href="#start"
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-[0_8px_20px_-8px_rgba(37,99,235,.6)] transition-all hover:-translate-y-0.5 hover:bg-primary-hover"
             >
-              Get Started <ArrowRight className="size-4" />
+              Start Discovering <ArrowRight className="size-4" />
             </Link>
             <Link
               href="/get-a-demo"
               className="inline-flex items-center gap-2 rounded-lg border border-border bg-card/70 px-5 py-3 text-sm font-semibold transition-all hover:-translate-y-0.5 hover:border-primary dark:border-foreground/70 dark:bg-transparent"
             >
-              Book a Demo <ArrowRight className="size-4" />
+              Book a Free Demo <ArrowRight className="size-4" />
             </Link>
           </motion.div>
         </div>
@@ -62,7 +62,7 @@ export function Hero() {
           initial={reduce ? false : { opacity: 0, y: 24, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-          className="relative mx-auto hidden w-full max-w-[600px] lg:block lg:max-w-none"
+          className="relative mx-auto hidden w-full max-w-[680px] lg:block lg:max-w-none"
         >
           <HeroVisual />
         </motion.div>
