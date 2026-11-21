@@ -178,6 +178,49 @@ export function FooterSection() {
             <p className="mt-3 max-w-[220px] text-[13px] leading-[1.6] text-white/45">
               Precision lead intelligence for modern sales teams.
             </p>
+
+            <div className="mt-5 flex items-center gap-4">
+              <Link
+                href="#"
+                aria-label="Facebook"
+                className="text-[#1877F2] transition-transform duration-200 hover:-translate-y-0.5"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.099 4.388 23.094 10.125 24v-8.438H7.078v-3.489h3.047V9.413c0-3.026 1.792-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.971H15.83c-1.49 0-1.955.932-1.955 1.887v2.263h3.328l-.532 3.489h-2.796V24C19.612 23.094 24 18.099 24 12.073z" />
+                </svg>
+              </Link>
+
+              <Link
+                href="https://www.instagram.com/aqstra.ai?dmpr=dmgxbGN4OXRqdTVu"
+                aria-label="Instagram"
+                className="transition-transform duration-200 hover:-translate-y-0.5"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="instagram-gradient" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#FFDC80" />
+                      <stop offset="0.25" stopColor="#FCAF45" />
+                      <stop offset="0.5" stopColor="#F77737" />
+                      <stop offset="0.75" stopColor="#C13584" />
+                      <stop offset="1" stopColor="#405DE6" />
+                    </linearGradient>
+                  </defs>
+                  <rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#instagram-gradient)" strokeWidth="2.2" />
+                  <circle cx="12" cy="12" r="4.2" stroke="url(#instagram-gradient)" strokeWidth="2.2" />
+                  <circle cx="17.4" cy="6.6" r="1.25" fill="#C13584" />
+                </svg>
+              </Link>
+
+              <Link
+                href="https://www.linkedin.com/company/aqstra/posts/?feedView=all"
+                aria-label="LinkedIn"
+                className="text-[#0A66C2] transition-transform duration-200 hover:-translate-y-0.5"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </Link>
+            </div>
           </motion.div>
 
           {FOOTER_COLUMNS.map((col, i) => (
