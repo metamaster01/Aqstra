@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { AIEngineMark } from "@/components/product/ai-engine-mark";
 
 /**
- * AQSTRA root node + "thread" connector lines dropping down into the
+ * Aqstra root node + "thread" connector lines dropping down into the
  * capability cards grid below it — same curved/flowing-dash technique as
  * DataFlowSection, but using percentage-space coordinates (viewBox 0 0 100 H)
  * instead of fixed pixel ones. That's what makes this safe to use on top of
@@ -23,11 +23,11 @@ import { AIEngineMark } from "@/components/product/ai-engine-mark";
 export function CapabilityConnector() {
   return (
     <div className="relative mx-auto mt-6 max-w-[760px]">
-      {/* AQSTRA root node */}
+      {/* Aqstra root node */}
       <div className="relative z-10 flex justify-center">
         <div className="inline-flex items-center gap-2 rounded-full border-2 border-primary/40 bg-gradient-to-br from-primary to-[#1d4ed8] px-4 py-2 text-white shadow-[0_14px_30px_-12px_rgba(37,99,235,.55)]">
           <AIEngineMark className="size-4" />
-          <span className="text-[12px] font-extrabold tracking-wide">AQSTRA</span>
+          <span className="text-[12px] font-extrabold tracking-wide">Aqstra</span>
         </div>
       </div>
 

@@ -71,7 +71,7 @@ export function SolutionSteps({ solution }: { solution: Solution }) {
         <FadeIn>
           <div id="steps-title">
             <SectionHeading
-              eyebrow="How AQSTRA helps"
+              eyebrow="How Aqstra helps"
               title="From raw leads to a confident next step"
               description="The same five-stage workflow, tuned for how your team works."
             />

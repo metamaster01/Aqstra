@@ -1,4 +1,4 @@
-/** "How AQSTRA Works!" -> "how-aqstra-works". Safe to use in the browser and on the server. */
+/** "How Aqstra Works!" -> "how-aqstra-works". Safe to use in the browser and on the server. */
 export function slugify(input: string): string {
   return input
     .toLowerCase()

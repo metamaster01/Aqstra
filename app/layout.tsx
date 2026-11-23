@@ -13,9 +13,9 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "AQSTRA — Find the right leads. Build smarter outreach.",
+  title: "Aqstra — Find the right leads. Build smarter outreach.",
   description:
-    "AQSTRA helps you discover, classify, and filter prospects for accuracy, then turn your qualified shortlist into structured outreach campaigns. Discover relevant business prospects with AQSTRA. Explore AI-powered lead discovery, intelligent filtering and business intelligence to simplify B2B prospecting.",
+    "Aqstra helps you discover, classify, and filter prospects for accuracy, then turn your qualified shortlist into structured outreach campaigns. Discover relevant business prospects with Aqstra. Explore AI-powered lead discovery, intelligent filtering and business intelligence to simplify B2B prospecting.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

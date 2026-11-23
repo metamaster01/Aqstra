@@ -1266,7 +1266,7 @@ const CDN = process.env.NEXT_PUBLIC_CDN_URL;
 const MODEL_SRC = `${CDN}/video/model/macbook-3.glb`;
 const POSTER_LIGHT = `${CDN}/images/poster-light.avif`;
 const POSTER_DARK = `${CDN}/images/poster-dark.avif`;
-const VIDEO_SRC = `${CDN}/video/demo.mp4`;
+const VIDEO_SRC = `${CDN}/video/demo-3.mp4`;
 const HAS_VIDEO = true;
 
 const MOBILE_MODE: "3d" | "video" = "3d"; // "3d" = still laptop + video, "video" = video only
@@ -1849,7 +1849,7 @@ export function MacbookShowcase() {
         ) : (
           <div
             role="img"
-            aria-label="MacBook showing the AQSTRA prospect list"
+            aria-label="MacBook showing the Aqstra prospect list"
             className="relative h-[72vw] max-h-[460px] min-h-[280px] md:absolute md:inset-0 md:h-auto md:max-h-none md:min-h-0"
           >
             {mode && (

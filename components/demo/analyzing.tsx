@@ -75,7 +75,7 @@ export function Analyzing({ industryId, ready, onDone }: { industryId: string; r
         Analyzing your target market…
       </h2>
       <p className="mx-auto mt-3 max-w-[400px] text-[14.5px] leading-[1.7] text-muted">
-        AQSTRA is matching sample companies and decision-makers to your selected criteria.
+        Aqstra is matching sample companies and decision-makers to your selected criteria.
       </p>
 
       <div className="mt-8 rounded-2xl border border-border bg-card p-5 text-left shadow-[0_24px_60px_-34px_rgba(37,99,235,0.35)] dark:border-white/15 dark:bg-white/[0.04] dark:shadow-none sm:p-6">

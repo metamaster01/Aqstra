@@ -55,15 +55,15 @@ export const SOLUTIONS: Solution[] = [
     short: "Qualified, ranked prospects so reps spend their time selling.",
     eyebrow: "For Sales Teams",
     meta: {
-      title: "AQSTRA for Sales Teams",
+      title: "Aqstra for Sales Teams",
       description:
         "Build focused pipelines with qualified prospects that match your ideal customer profile, and sync them straight to your CRM.",
     },
     hero: {
       headline: "Spend your day selling, not searching",
       subhead:
-        "AQSTRA finds, qualifies and ranks prospects that match your ideal customer, so every rep starts the morning with a list worth calling.",
-      image: { src: `${IMG}/sales-hero.jpg`, alt: "AQSTRA sales pipeline with leads ranked by score", ...HERO },
+        "Aqstra finds, qualifies and ranks prospects that match your ideal customer, so every rep starts the morning with a list worth calling.",
+      image: { src: `${IMG}/sales-hero.jpg`, alt: "Aqstra sales pipeline with leads ranked by score", ...HERO },
     },
     stats: [
       { value: "0–100", label: "Score on every lead" },
@@ -106,13 +106,13 @@ export const SOLUTIONS: Solution[] = [
       {
         stage: "Outreach",
         title: "Hand off or start a sequence",
-        text: "Sync qualified leads to Salesforce or HubSpot, or launch a multi-step campaign in AQSTRA.",
+        text: "Sync qualified leads to Salesforce or HubSpot, or launch a multi-step campaign in Aqstra.",
       },
     ],
     showcase: {
       eyebrow: "Built for the daily workflow",
       title: "A ranked list, ready every morning",
-      text: "Open AQSTRA and see the leads most likely to convert first, along with the fit and signals behind each score.",
+      text: "Open Aqstra and see the leads most likely to convert first, along with the fit and signals behind each score.",
       points: [
         "Search by industry, company size and technology stack",
         "See why a lead scored the way it did",
@@ -132,12 +132,12 @@ export const SOLUTIONS: Solution[] = [
     ],
     faqs: [
       {
-        q: "How does AQSTRA decide which leads to prioritize?",
+        q: "How does Aqstra decide which leads to prioritize?",
         a: "Every lead gets a score from 0 to 100 that combines fit with your ideal customer profile and recent signals. You choose the criteria, so the ranking reflects how your team actually qualifies.",
       },
       {
         q: "Will it work with the CRM we already use?",
-        a: "AQSTRA syncs with Salesforce and HubSpot. Qualified leads, scores and campaign activity move across, and status changes flow back.",
+        a: "Aqstra syncs with Salesforce and HubSpot. Qualified leads, scores and campaign activity move across, and status changes flow back.",
       },
       {
         q: "Where do the leads come from?",
@@ -153,7 +153,7 @@ export const SOLUTIONS: Solution[] = [
     short: "Map accounts and decision makers, and find partners with precision.",
     eyebrow: "For Business Development",
     meta: {
-      title: "AQSTRA for Business Development",
+      title: "Aqstra for Business Development",
       description:
         "Identify partnership opportunities and strategic accounts, and find the right contacts at the right companies.",
     },
@@ -161,7 +161,7 @@ export const SOLUTIONS: Solution[] = [
       headline: "Find the right accounts, and the right people inside them",
       subhead:
         "Map decision makers, spot partnership-fit companies and keep strategic accounts warm, using data you can trust.",
-      image: { src: `${IMG}/business-development-hero.jpg`, alt: "AQSTRA account mapping view", ...HERO },
+      image: { src: `${IMG}/business-development-hero.jpg`, alt: "Aqstra account mapping view", ...HERO },
     },
     stats: [
       { value: "Fit", label: "Scored on every account" },
@@ -189,7 +189,7 @@ export const SOLUTIONS: Solution[] = [
       {
         stage: "Discover",
         title: "Search by what defines a partner",
-        text: "Describe the companies you want to work with and AQSTRA finds those that match.",
+        text: "Describe the companies you want to work with and Aqstra finds those that match.",
       },
       {
         stage: "Classify",
@@ -204,7 +204,7 @@ export const SOLUTIONS: Solution[] = [
       {
         stage: "Outreach",
         title: "Export a list or start a campaign",
-        text: "Hand a targeted list to your team, sync it to your CRM or begin outreach in AQSTRA.",
+        text: "Hand a targeted list to your team, sync it to your CRM or begin outreach in Aqstra.",
       },
     ],
     showcase: {
@@ -231,7 +231,7 @@ export const SOLUTIONS: Solution[] = [
     faqs: [
       {
         q: "Can I find partners, not only buyers?",
-        a: "Yes. Define the criteria that make a company a good partner and AQSTRA classifies and scores accounts against them, the same way it does for buyers.",
+        a: "Yes. Define the criteria that make a company a good partner and Aqstra classifies and scores accounts against them, the same way it does for buyers.",
       },
       {
         q: "How do I keep strategic accounts from going quiet?",
@@ -239,7 +239,7 @@ export const SOLUTIONS: Solution[] = [
       },
       {
         q: "Can I export lists for my own outreach?",
-        a: "Yes. Export a targeted list, sync it to your CRM or turn it into a campaign inside AQSTRA.",
+        a: "Yes. Export a targeted list, sync it to your CRM or turn it into a campaign inside Aqstra.",
       },
     ],
   },
@@ -251,7 +251,7 @@ export const SOLUTIONS: Solution[] = [
     short: "Repeatable prospecting workflows that turn raw data into pipeline.",
     eyebrow: "For Growth Teams",
     meta: {
-      title: "AQSTRA for Growth Teams",
+      title: "Aqstra for Growth Teams",
       description:
         "Scale outbound with data-driven prospecting. Build repeatable workflows that turn raw data into qualified opportunities.",
     },
@@ -259,7 +259,7 @@ export const SOLUTIONS: Solution[] = [
       headline: "Turn raw data into a repeatable growth engine",
       subhead:
         "Build a workflow once, run it every week, and see which segments actually convert.",
-      image: { src: `${IMG}/growth-hero.jpg`, alt: "AQSTRA growth dashboard with pipeline quality", ...HERO },
+      image: { src: `${IMG}/growth-hero.jpg`, alt: "Aqstra growth dashboard with pipeline quality", ...HERO },
     },
     stats: [
       { value: "5", label: "Stages you can repeat" },
@@ -349,7 +349,7 @@ export const SOLUTIONS: Solution[] = [
     short: "Structured sequences that start with who is actually ready.",
     eyebrow: "For Outreach",
     meta: {
-      title: "AQSTRA for Outreach",
+      title: "Aqstra for Outreach",
       description:
         "Turn a qualified shortlist into structured, personalized outreach sequences that stop when someone replies.",
     },
@@ -357,7 +357,7 @@ export const SOLUTIONS: Solution[] = [
       headline: "Outreach that starts with who is actually ready",
       subhead:
         "Turn a qualified shortlist into structured, personalized sequences, and stop them the moment someone replies.",
-      image: { src: `${IMG}/outreach-hero.jpg`, alt: "AQSTRA campaign sequence builder", ...HERO },
+      image: { src: `${IMG}/outreach-hero.jpg`, alt: "Aqstra campaign sequence builder", ...HERO },
     },
     stats: [
       { value: "Multi-step", label: "Sequences with timed follow-ups" },
@@ -400,13 +400,13 @@ export const SOLUTIONS: Solution[] = [
       {
         stage: "Sync",
         title: "Track replies and sync results",
-        text: "Replies and meetings flow back to AQSTRA and your CRM automatically.",
+        text: "Replies and meetings flow back to Aqstra and your CRM automatically.",
       },
     ],
     showcase: {
       eyebrow: "Campaign builder",
       title: "Sequences built from lead intelligence",
-      text: "Every message starts from what AQSTRA already knows about the lead, so relevance does not depend on manual research.",
+      text: "Every message starts from what Aqstra already knows about the lead, so relevance does not depend on manual research.",
       points: [
         "Use lead fields and signals as message placeholders",
         "Set the delay between each step",
@@ -431,7 +431,7 @@ export const SOLUTIONS: Solution[] = [
       },
       {
         q: "Do I need a separate outreach tool?",
-        a: "No, you can build and run sequences in AQSTRA. If you already use Outreach or SalesLoft, you can connect them instead.",
+        a: "No, you can build and run sequences in Aqstra. If you already use Outreach or SalesLoft, you can connect them instead.",
       },
       {
         q: "How do I protect my sender reputation?",

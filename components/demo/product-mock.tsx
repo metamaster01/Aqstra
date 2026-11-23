@@ -54,7 +54,7 @@ export function ProductMock({ variant = "compact", className = "" }: { variant?:
         <span className="size-2.5 rounded-full bg-[#ff6159]" />
         <span className="size-2.5 rounded-full bg-[#ffbd2e]" />
         <span className="size-2.5 rounded-full bg-[#28c940]" />
-        {variant === "compact" && <span className="ml-3 text-[11.5px] font-semibold">AQSTRA — Prospect Discovery</span>}
+        {variant === "compact" && <span className="ml-3 text-[11.5px] font-semibold">Aqstra — Prospect Discovery</span>}
       </div>
 
       {variant === "compact" ? (

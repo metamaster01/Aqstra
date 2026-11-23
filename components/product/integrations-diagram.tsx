@@ -20,7 +20,7 @@ const PLATFORMS = [
 ];
 
 // Taller canvas than the original attempt, per the "increase the height"
-// request. AQSTRA sits near the top; the six platforms fan out underneath
+// request. Aqstra sits near the top; the six platforms fan out underneath
 // it — i.e. DataFlowSection's left→center→right layout rotated 90°, with
 // the curves flipped to flow top-to-bottom ("upside down" relative to that
 // section's sideways orientation) instead of the flat wavy-bar used before.
@@ -47,7 +47,7 @@ export function IntegrationsDiagram() {
         ))}
       </svg>
 
-      {/* AQSTRA root node — plain wordmark, no engine icon/subtitle */}
+      {/* Aqstra root node — plain wordmark, no engine icon/subtitle */}
       <motion.div
         initial={{ opacity: 0, scale: 0.7 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -64,7 +64,7 @@ export function IntegrationsDiagram() {
             transition={{ duration: 2.6, repeat: Infinity, ease: "easeInOut" }}
           />
           <div className="relative flex size-[92px] items-center justify-center rounded-full border-2 border-primary/40 bg-gradient-to-br from-primary to-[#1d4ed8] text-white shadow-[0_20px_40px_-14px_rgba(37,99,235,.55)]">
-            <span className="font-display text-[17px] font-extrabold tracking-tight">AQSTRA</span>
+            <span className="font-display text-[17px] font-extrabold tracking-tight">Aqstra</span>
           </div>
         </div>
       </motion.div>

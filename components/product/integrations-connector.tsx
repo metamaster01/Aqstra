@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { AIEngineMark } from "@/components/product/ai-engine-mark";
 
 /**
- * AQSTRA root node with wavy "thread" connections dropping into the
- * integration cards below — showing AQSTRA integrating out to each platform,
+ * Aqstra root node with wavy "thread" connections dropping into the
+ * integration cards below — showing Aqstra integrating out to each platform,
  * rather than (as in the earlier version of this file) feeding generic
  * capability cards. Lives in the Integrations section now, not Platform
  * Capabilities.
@@ -26,7 +26,7 @@ export function IntegrationsConnector() {
       <div className="relative z-10 flex justify-center">
         <div className="inline-flex items-center gap-2 rounded-full border-2 border-primary/40 bg-gradient-to-br from-primary to-[#1d4ed8] px-4 py-2 text-white shadow-[0_14px_30px_-12px_rgba(37,99,235,.55)]">
           <AIEngineMark className="size-4" />
-          <span className="text-[12px] font-extrabold tracking-wide">AQSTRA</span>
+          <span className="text-[12px] font-extrabold tracking-wide">Aqstra</span>
         </div>
       </div>
 

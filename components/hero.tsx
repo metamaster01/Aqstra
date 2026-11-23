@@ -27,7 +27,7 @@ export function Hero() {
       <div className="mx-auto grid max-w-[1400px] items-center gap-14 px-6 py-14 sm:px-10 sm:py-20 lg:min-h-[calc(100svh-58px)] lg:grid-cols-[1fr_1.1fr] lg:gap-4 lg:px-14 lg:py-16">
         <div className="max-w-[520px]">
           <motion.p {...line(0)} className="mb-5 text-[16px] font-semibold uppercase tracking-[0.14em] text-primary dark:text-white">
-            MEET AQSTRA
+            MEET Aqstra
           </motion.p>
 
           <h1 className="font-display text-[48px] font-extrabold leading-[1.06] tracking-[-0.03em] sm:text-[56px] lg:text-[60px]">
@@ -39,7 +39,7 @@ export function Hero() {
           </h1>
 
           <motion.p {...line(4)} className="mt-7 max-w-[440px] text-[17px] leading-[1.75] text-muted">
-            AQSTRA helps businesses find relevant companies and prospects, then prioritize opportunities that match their ideal customer profile.
+            Aqstra helps businesses find relevant companies and prospects, then prioritize opportunities that match their ideal customer profile.
           </motion.p>
 
           <motion.div {...line(5)} className="mt-9 flex flex-wrap gap-3">

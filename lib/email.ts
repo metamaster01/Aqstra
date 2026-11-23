@@ -4,7 +4,7 @@
  *
  * Env (set as RUNTIME variables/secrets, not NEXT_PUBLIC_):
  *   RESEND_API_KEY        re_...
- *   CONTACT_FROM_EMAIL    "AQSTRA <hello@aqstra.com>"  (domain must be verified in Resend)
+ *   CONTACT_FROM_EMAIL    "Aqstra <hello@aqstra.com>"  (domain must be verified in Resend)
  *   CONTACT_NOTIFY_EMAIL  who gets new-request alerts; comma-separate for several
  */
 import { CONTACT, TOPICS, type ContactInput } from "@/lib/contact";
@@ -18,7 +18,7 @@ const fromAddress = () => {
   if (!from) {
     // Resend's test sender only delivers to your own Resend account email (otherwise a 403).
     console.warn("CONTACT_FROM_EMAIL is not set at runtime: using onboarding@resend.dev (testing only). Add it under Variables and Secrets, not Build variables.");
-    return "AQSTRA <onboarding@resend.dev>";
+    return "Aqstra <onboarding@resend.dev>";
   }
   return from;
 };
@@ -86,7 +86,7 @@ export function shell(preheader: string, inner: string) {
 <div style="display:none;max-height:0;overflow:hidden;opacity:0;">${esc(preheader)}</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;">
-<tr><td style="padding:20px 28px;border-bottom:1px solid #e2e8f0;font-size:18px;font-weight:800;letter-spacing:-0.02em;">AQSTRA</td></tr>
+<tr><td style="padding:20px 28px;border-bottom:1px solid #e2e8f0;font-size:18px;font-weight:800;letter-spacing:-0.02em;">Aqstra</td></tr>
 <tr><td style="padding:28px;font-size:15px;line-height:1.65;">${inner}</td></tr>
 </table>
 <p style="max-width:560px;margin:16px auto 0;font-size:12px;line-height:1.6;color:#64748b;">${LEGAL.company} &middot; ${esc(LEGAL.website)}</p>

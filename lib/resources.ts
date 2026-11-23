@@ -88,7 +88,7 @@ export const RESOURCES: Resource[] = [
     slug: "inside-aqstra-how-we-classify-prospects",
     type: "Video",
     tag: "Product",
-    title: "Inside AQSTRA: how prospects get classified",
+    title: "Inside Aqstra: how prospects get classified",
     description:
       "A short walkthrough of how we discover, classify, and filter prospects for accuracy.",
     readTime: "4 min watch",

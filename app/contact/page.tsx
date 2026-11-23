@@ -11,8 +11,8 @@ import { FadeIn } from "@/components/solutions/fade-in";
 import { TOPICS, type TopicValue } from "@/lib/contact";
 
 export const metadata: Metadata = {
-  title: "Contact Us | AQSTRA",
-  description: "Questions about AQSTRA, pricing or a demo? Send us a message and we'll get back to you soon.",
+  title: "Contact Us | Aqstra",
+  description: "Questions about Aqstra, pricing or a demo? Send us a message and we'll get back to you soon.",
 };
 
 export default async function ContactPage({ searchParams }: { searchParams: Promise<{ topic?: string }> }) {

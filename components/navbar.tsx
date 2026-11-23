@@ -38,8 +38,8 @@
 //       } bg-background/80`}
 //     >
 //       <nav className="mx-auto flex h-[58px] max-w-[1400px] items-center justify-between px-6 sm:px-10 lg:px-20" aria-label="Main">
-//         <Link href="/" className="font-display text-[19px] font-extrabold tracking-tight" aria-label="AQSTRA home">
-//           AQSTRA
+//         <Link href="/" className="font-display text-[19px] font-extrabold tracking-tight" aria-label="Aqstra home">
+//           Aqstra
 //         </Link>
 
 //         <ul className="hidden items-center gap-8 lg:flex xl:gap-10">
@@ -306,9 +306,9 @@ export function Navbar() {
         className="mx-auto flex h-[58px] max-w-[1400px] items-center justify-between px-6 sm:px-10 lg:px-20"
         aria-label="Main"
       >
-        <Link href="/" className="flex items-center" aria-label="AQSTRA home">
-          <Image src="/logo-2.png" alt="AQSTRA" width={160} height={50} className="h-12 sm:h-12 md:h-14 w-auto dark:hidden" priority />
-          <Image src="/logo-3.png" alt="AQSTRA" width={384} height={119} className="hidden h-12 sm:h-12 md:h-14 w-auto dark:block" priority />
+        <Link href="/" className="flex items-center" aria-label="Aqstra home">
+          <Image src="/logo-2.png" alt="Aqstra" width={160} height={50} className="h-12 sm:h-12 md:h-14 w-auto dark:hidden" priority />
+          <Image src="/logo-3.png" alt="Aqstra" width={384} height={119} className="hidden h-12 sm:h-12 md:h-14 w-auto dark:block" priority />
         </Link>
 
         <ul className="hidden items-center gap-6 lg:flex xl:gap-8">

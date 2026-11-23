@@ -86,7 +86,7 @@ export function DemoExperience({ firstName }: { firstName: string }) {
               <Star className="size-3.5" aria-hidden /> No login required
             </span>
             <h1 className="mt-5 font-display font-extrabold text-foreground" style={h1Style}>
-              Experience AQSTRA in Action
+              Experience Aqstra in Action
             </h1>
             <p className="mx-auto mt-4 max-w-[520px] text-[15px] leading-[1.75] text-muted sm:text-[17px]">
               Discover relevant companies, find decision-makers, and explore sales opportunities tailored to your business.

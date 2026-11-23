@@ -39,10 +39,10 @@ export function IntegrationsSection() {
           transition={{ duration: 0.6, delay: 0.08 }}
           className="mx-auto mt-3 max-w-[440px] text-[14px] leading-[1.7] text-muted"
         >
-          AQSTRA connects seamlessly with the tools your team already uses.
+          Aqstra connects seamlessly with the tools your team already uses.
         </motion.p>
 
-        {/* Desktop: full animated node diagram (AQSTRA → each platform) */}
+        {/* Desktop: full animated node diagram (Aqstra → each platform) */}
         <div className="mt-4">
           <IntegrationsDiagram />
         </div>

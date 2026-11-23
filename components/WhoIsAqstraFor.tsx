@@ -185,7 +185,7 @@
 //               */}
 //               <Link
 //                 href={link}
-//                 aria-label={`Learn more about AQSTRA for ${title}`}
+//                 aria-label={`Learn more about Aqstra for ${title}`}
 //                 className="mt-6 inline-flex items-center text-sm font-semibold text-primary transition-opacity duration-300 after:absolute after:inset-0 after:content-[''] focus-visible:opacity-100 focus-visible:outline-none md:opacity-0 md:group-hover:opacity-100 md:group-focus-within:opacity-100"
 //               >
 //                 <span className="inline-flex items-center gap-1 transition-transform duration-300 group-hover:translate-x-1">
@@ -397,7 +397,7 @@
 //               */}
 //               <Link
 //                 href={link}
-//                 aria-label={`Learn more about AQSTRA for ${title}`}
+//                 aria-label={`Learn more about Aqstra for ${title}`}
 //                 className="mt-6 inline-flex items-center text-sm font-semibold text-primary transition-opacity duration-300 after:absolute after:inset-0 after:content-[''] focus-visible:opacity-100 focus-visible:outline-none md:opacity-0 md:group-hover:opacity-100 md:group-focus-within:opacity-100"
 //               >
 //                 <span className="inline-flex items-center gap-1 transition-transform duration-300 group-hover:translate-x-1">
@@ -612,7 +612,7 @@ export function WhoIsAqstraFor() {
               */}
               <Link
                 href={link}
-                aria-label={`Learn more about AQSTRA for ${title}`}
+                aria-label={`Learn more about Aqstra for ${title}`}
                 className="mt-6 inline-flex items-center text-sm font-semibold text-primary transition-opacity duration-300 after:absolute after:inset-0 after:content-[''] focus-visible:opacity-100 focus-visible:outline-none md:opacity-0 md:group-hover:opacity-100 md:group-focus-within:opacity-100"
               >
                 <span className="inline-flex items-center gap-1 transition-transform duration-300 group-hover:translate-x-1">

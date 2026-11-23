@@ -22,7 +22,7 @@ export function SolutionsHeader() {
           </h1>
 
           <p className="mx-auto mt-5 max-w-[520px] text-balance text-[15px] leading-[1.75] text-muted sm:text-[17px]">
-            Whether you&apos;re in sales, business development, or growth, AQSTRA adapts to
+            Whether you&apos;re in sales, business development, or growth, Aqstra adapts to
             your workflow and helps you find better prospects.
           </p>
         </Reveal>

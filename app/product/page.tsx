@@ -10,9 +10,9 @@ import { PlatformCapabilitiesSection } from "@/components/product/platform-capab
 import { IntegrationsSection } from "@/components/product/integrations-section";
 
 export const metadata = {
-  title: "Product - AQSTRA",
+  title: "Product - Aqstra",
   description:
-    "AQSTRA is a powerful lead discovery and prospecting platform that helps you find better leads, faster.",
+    "Aqstra is a powerful lead discovery and prospecting platform that helps you find better leads, faster.",
 };
 
 export default function ProductPage() {

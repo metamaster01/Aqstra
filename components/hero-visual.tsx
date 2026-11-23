@@ -73,7 +73,7 @@ export function HeroVisual() {
           
       <Image
         src={poster}
-        alt="AQSTRA platform preview"
+        alt="Aqstra platform preview"
         fill
         priority
         fetchPriority="high"
@@ -131,7 +131,7 @@ function LightVisual() {
       <div className="absolute left-[10%] right-[8%] top-[12%] rounded-2xl border border-white bg-white/90 p-3 shadow-[0_30px_60px_-20px_rgba(37,99,235,.25)] ring-1 ring-slate-200/70 sm:p-4">
         <div className="flex items-center justify-between">
           <span className="flex items-center gap-1.5 font-display text-[11px] font-extrabold text-slate-900">
-            <span className="flex size-4 items-center justify-center rounded bg-primary text-[9px] text-white">A</span>AQSTRA
+            <span className="flex size-4 items-center justify-center rounded bg-primary text-[9px] text-white">A</span>Aqstra
           </span>
           <span className="flex items-center gap-2 text-slate-400"><Bell className="size-3" /><span className="size-4 rounded-full bg-slate-200" /></span>
         </div>

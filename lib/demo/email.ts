@@ -38,11 +38,11 @@ ${d.goal ? `<p style="margin:20px 0 0;font-size:13px;color:#64748b;">Main goal</
 
 function confirmationEmail({ data: d, link }: Args) {
   const first = d.fullName.split(" ")[0];
-  const subject = "Your AQSTRA demo is ready";
+  const subject = "Your Aqstra demo is ready";
   const html = shell(
-    `${first}, your interactive AQSTRA demo is ready.`,
+    `${first}, your interactive Aqstra demo is ready.`,
     `<h1 style="margin:0 0 12px;font-size:22px;letter-spacing:-0.02em;">Your demo is ready, ${esc(first)}.</h1>
-<p style="margin:0 0 18px;">Thanks for requesting a demo. Pick an industry and a target company and see how AQSTRA finds and qualifies prospects. It takes about two minutes and needs no login.</p>
+<p style="margin:0 0 18px;">Thanks for requesting a demo. Pick an industry and a target company and see how Aqstra finds and qualifies prospects. It takes about two minutes and needs no login.</p>
 <p style="margin:0 0 22px;"><a href="${esc(link)}" style="display:inline-block;background:#2563eb;color:#ffffff;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:10px;">Open your demo</a></p>
 <p style="margin:0 0 6px;font-size:13px;color:#64748b;">This personal link works for ${SESSION_DAYS} days.</p>
 <p style="margin:18px 0 0;">Someone from our team will also be in touch ${esc(CONTACT.responseTime)} to learn about your goals and show you what live results look like for your market.${
@@ -52,7 +52,7 @@ function confirmationEmail({ data: d, link }: Args) {
   );
   const text = [
     `Your demo is ready, ${first}.`, "",
-    "Pick an industry and a target company and see how AQSTRA finds and qualifies prospects.",
+    "Pick an industry and a target company and see how Aqstra finds and qualifies prospects.",
     `Open your demo: ${link}`, `(This personal link works for ${SESSION_DAYS} days.)`, "",
     `Someone from our team will be in touch ${CONTACT.responseTime}.${d.phone ? ` We have your number (${d.phone}) and may call to arrange a time.` : ""}`, "",
     "If this wasn't you, you can ignore this email.",

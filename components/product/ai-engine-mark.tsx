@@ -1,7 +1,7 @@
 /**
  * Shared "compute / AI engine" mark — originally built inline inside
  * DataFlowSection, pulled out here so PlatformCapabilitiesSection's root
- * node (and anything else that wants the AQSTRA engine glyph) can reuse the
+ * node (and anything else that wants the Aqstra engine glyph) can reuse the
  * exact same SVG instead of a copy-pasted duplicate.
  */
 export function AIEngineMark({ className }: { className?: string }) {

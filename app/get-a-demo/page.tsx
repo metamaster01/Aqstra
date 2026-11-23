@@ -7,8 +7,8 @@ import { TrustedBy } from "@/components/demo/trusted-by";
 import { getDemoSession } from "@/lib/demo/session";
 
 export const metadata: Metadata = {
-  title: "Get a Demo | AQSTRA",
-  description: "See how AQSTRA helps you find, research and prioritize the right prospects. Request your interactive demo.",
+  title: "Get a Demo | Aqstra",
+  description: "See how Aqstra helps you find, research and prioritize the right prospects. Request your interactive demo.",
 };
 
 export default async function GetADemoPage({ searchParams }: { searchParams: Promise<{ expired?: string }> }) {

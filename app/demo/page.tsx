@@ -6,7 +6,7 @@ import { DemoExperience } from "@/components/demo/demo-experience";
 import { getDemoSession } from "@/lib/demo/session";
 
 export const metadata: Metadata = {
-  title: "Interactive Demo | AQSTRA",
+  title: "Interactive Demo | Aqstra",
   robots: { index: false, follow: false }, // a gated page: keep it out of search results
 };
 

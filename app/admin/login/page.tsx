@@ -41,7 +41,7 @@ export default async function LoginPage({
           <span className="mx-auto grid size-12 place-items-center rounded-xl bg-primary/10 text-primary dark:text-[#8aa4ff]">
             <LockKeyhole className="size-5" aria-hidden />
           </span>
-          <p className="mt-4 font-display text-[22px] font-extrabold tracking-tight">AQSTRA</p>
+          <p className="mt-4 font-display text-[22px] font-extrabold tracking-tight">Aqstra</p>
           <h1 className="mt-1 text-[14px] font-medium text-muted">Admin sign in</h1>
         </div>
 

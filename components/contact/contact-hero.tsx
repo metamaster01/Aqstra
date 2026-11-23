@@ -21,7 +21,7 @@ export function ContactHero() {
             Let&apos;s talk about your pipeline
           </h1>
           <p className="mx-auto mt-5 max-w-[540px] text-balance text-[15px] leading-[1.75] text-muted sm:text-[17px]">
-            Questions about AQSTRA, pricing or a demo? Send us a message and a real person will get back to you{" "}
+            Questions about Aqstra, pricing or a demo? Send us a message and a real person will get back to you{" "}
             {CONTACT.responseTime}.
           </p>
         </FadeIn>

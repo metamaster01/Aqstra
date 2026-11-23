@@ -89,7 +89,7 @@ function eventActivity(e: RawEvent): Activity | null {
     case "book_demo_click":
       return { at: e.created_at, kind: "book", text: e.meta?.from === "footer-card" ? "Clicked “See it with live data”" : "Clicked “Book a Demo”" };
     case "login_click":
-      return { at: e.created_at, kind: "login", text: "Clicked “Log in to AQSTRA”" };
+      return { at: e.created_at, kind: "login", text: "Clicked “Log in to Aqstra”" };
     case "plans_click":
       return { at: e.created_at, kind: "plans", text: "Opened subscription plans" };
     case "view_companies":

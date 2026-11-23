@@ -46,7 +46,7 @@
 //             transition={{ duration: 0.5 }}
 //             className="col-span-2 sm:col-span-3 lg:col-span-1"
 //           >
-//             <span className="font-display text-[19px] font-extrabold tracking-tight text-white">AQSTRA</span>
+//             <span className="font-display text-[19px] font-extrabold tracking-tight text-white">Aqstra</span>
 //             <p className="mt-3 max-w-[220px] text-[13px] leading-[1.6] text-white/45">
 //               Precision lead intelligence for modern sales teams.
 //             </p>
@@ -89,7 +89,7 @@
 
 //       {/* giant cursor-reactive brand mark */}
 //       <div className="hidden h-[16rem] sm:h-[20rem] lg:flex lg:h-[22rem]">
-//         <TextHoverEffect text="AQSTRA" duration={0.3} />
+//         <TextHoverEffect text="Aqstra" duration={0.3} />
 //       </div>
 
 //       <div
@@ -174,7 +174,7 @@ export function FooterSection() {
             transition={{ duration: 0.5 }}
             className="col-span-2 sm:col-span-3 lg:col-span-1"
           >
-            <img src="/logo-3.png" alt="AQSTRA" className="h-14 w-auto object-contain" />
+            <img src="/logo-3.png" alt="Aqstra" className="h-14 w-auto object-contain" />
             <p className="mt-3 max-w-[220px] text-[13px] leading-[1.6] text-white/45">
               Precision lead intelligence for modern sales teams.
             </p>
@@ -246,7 +246,7 @@ export function FooterSection() {
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
-          <p className="text-[12.5px] text-white/40">© {year} AQSTRA. All rights reserved.</p>
+          <p className="text-[12.5px] text-white/40">© {year} Aqstra. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy-policy" className="text-[12.5px] text-white/40 transition-colors hover:text-white/70">
               Privacy Policy
@@ -260,7 +260,7 @@ export function FooterSection() {
 
       {/* giant cursor-reactive brand mark */}
       <div className="hidden h-[16rem] sm:h-[20rem] lg:flex lg:h-[22rem]">
-        <TextHoverEffect text="AQSTRA" duration={0.3} />
+        <TextHoverEffect text="Aqstra" duration={0.3} />
       </div>
 
       <div

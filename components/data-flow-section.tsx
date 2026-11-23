@@ -97,7 +97,7 @@ export function DataFlowSection() {
             transition={{ duration: 0.6, delay: 0.14 }}
             className="mx-auto mt-4 max-w-[480px] text-[14px] leading-[1.75] text-muted"
           >
-            Raw signals pour in from every channel you advertise on. AQSTRA's engine classifies, filters and
+            Raw signals pour in from every channel you advertise on. Aqstra's engine classifies, filters and
             prioritizes them in real time — then routes clean, qualified leads straight to the team that should act on them.
           </motion.p>
         </div>
@@ -153,7 +153,7 @@ export function DataFlowSection() {
                 />
                 <div className="relative flex size-[122px] flex-col items-center justify-center gap-1.5 rounded-full border-2 border-primary/40 bg-gradient-to-br from-primary to-[#1d4ed8] text-white shadow-[0_20px_40px_-14px_rgba(37,99,235,.55)]">
                   <AIEngineMark className="size-9" />
-                  <span className="text-center text-[11px] font-extrabold leading-tight tracking-tight">AQSTRA</span>
+                  <span className="text-center text-[11px] font-extrabold leading-tight tracking-tight">Aqstra</span>
                   <span className="text-[8.5px] font-semibold uppercase leading-none tracking-[0.06em] opacity-85">AI Engine</span>
                 </div>
               </div>
@@ -173,7 +173,7 @@ export function DataFlowSection() {
  * neural-network of connections radiating out to satellite nodes. Built as
  * plain inline SVG (fill="currentColor", so it inherits the white text color
  * of its gradient badge) rather than pulled from an icon library, since this
- * is meant to read as AQSTRA's own engine mark, not a generic glyph.
+ * is meant to read as Aqstra's own engine mark, not a generic glyph.
  */
 function AIEngineMark({ className }: { className?: string }) {
   return (
@@ -315,7 +315,7 @@ function MobileFlow() {
         />
         <div className="relative flex size-[88px] flex-col items-center justify-center gap-1 rounded-full border-2 border-primary/40 bg-gradient-to-br from-primary to-[#1d4ed8] text-white shadow-[0_16px_30px_-12px_rgba(37,99,235,.55)]">
           <AIEngineMark className="size-6" />
-          <span className="text-[9px] font-extrabold leading-tight">AQSTRA</span>
+          <span className="text-[9px] font-extrabold leading-tight">Aqstra</span>
           <span className="text-[7px] font-semibold uppercase leading-none tracking-[0.05em] opacity-85">AI Engine</span>
         </div>
       </div>

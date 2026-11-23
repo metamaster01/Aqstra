@@ -40,7 +40,7 @@ export function UnlockDialog({ open, onClose }: { open: boolean; onClose: () => 
           Login to Unlock
         </h2>
         <p className="mt-2 text-[14px] leading-[1.7] text-muted">
-          This contact detail is available to registered AQSTRA users. Log in to continue exploring full prospect intelligence.
+          This contact detail is available to registered Aqstra users. Log in to continue exploring full prospect intelligence.
         </p>
 
         <div className="mt-6 space-y-2.5">
@@ -49,7 +49,7 @@ export function UnlockDialog({ open, onClose }: { open: boolean; onClose: () => 
             onClick={() => trackDemoEvent("login_click")}
             className="flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-5 py-3 text-[14px] font-semibold text-primary-foreground transition-colors hover:bg-primary-hover"
           >
-            Log in to AQSTRA <ArrowRight className="size-4" aria-hidden />
+            Log in to Aqstra <ArrowRight className="size-4" aria-hidden />
           </Link>
           <Link
             href="/pricing"
@@ -61,7 +61,7 @@ export function UnlockDialog({ open, onClose }: { open: boolean; onClose: () => 
         </div>
 
         <p className="mt-5 text-center text-[12.5px] text-muted">
-          New to AQSTRA?{" "}
+          New to Aqstra?{" "}
           <Link href="/pricing" onClick={() => trackDemoEvent("plans_click")} className="font-semibold text-primary hover:underline dark:text-[#9db8ff]">
             Explore subscription options
           </Link>

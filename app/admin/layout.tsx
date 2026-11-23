@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 
 // Everything under /admin: never indexed, never cached.
 export const metadata: Metadata = {
-  title: { default: "Admin | AQSTRA", template: "%s | AQSTRA Admin" },
+  title: { default: "Admin | Aqstra", template: "%s | Aqstra Admin" },
   robots: { index: false, follow: false, nocache: true },
 };
 

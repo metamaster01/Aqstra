@@ -44,7 +44,7 @@ export function ProcessSection() {
           transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto mt-5 max-w-[520px] text-[14.5px] leading-[1.75] text-muted"
         >
-          Finding potential customers shouldn’t involve endless searching. AQSTRA simplifies discovery with a structured five-step workflow.
+          Finding potential customers shouldn’t involve endless searching. Aqstra simplifies discovery with a structured five-step workflow.
         </motion.p>
 
         {/* Desktop / tablet: horizontal row with drawing connector line */}

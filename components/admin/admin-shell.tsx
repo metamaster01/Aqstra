@@ -12,7 +12,7 @@ import { Badge, btn } from "./ui";
 function Brand() {
   return (
     <Link href="/admin" className="font-display text-[17px] font-extrabold tracking-tight">
-      AQSTRA <span className="font-medium text-muted">Admin</span>
+      Aqstra <span className="font-medium text-muted">Admin</span>
     </Link>
   );
 }

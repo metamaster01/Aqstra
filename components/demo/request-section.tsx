@@ -30,10 +30,10 @@ export function RequestSection({ welcomeBack, expired }: { welcomeBack?: string;
           </span>
 
           <h1 className="mt-5 font-display font-extrabold text-foreground" style={h1Style}>
-            See AQSTRA in Action
+            See Aqstra in Action
           </h1>
           <p className="mt-5 max-w-[500px] text-[15px] leading-[1.75] text-muted sm:text-[17px]">
-            Discover how AQSTRA helps you identify potential customers, research companies, find relevant decision-makers,
+            Discover how Aqstra helps you identify potential customers, research companies, find relevant decision-makers,
             and build actionable sales opportunities.
           </p>
 

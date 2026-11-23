@@ -13,7 +13,7 @@ export const CONTACT = {
 /** Image beside the form. Drop the file in /public/images/contact/ (about 1200×900). */
 export const CONTACT_IMAGE = {
   src: "/contact-team.jpg",
-  alt: "The AQSTRA team",
+  alt: "The Aqstra team",
   width: 1200,
   height: 900,
 };
@@ -40,7 +40,7 @@ export const NEXT_STEPS = [
   },
   {
     title: "A walkthrough that fits",
-    text: "If you asked for a demo, we show AQSTRA on your own use case, not a generic tour.",
+    text: "If you asked for a demo, we show Aqstra on your own use case, not a generic tour.",
   },
 ];
 
