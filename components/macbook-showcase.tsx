@@ -1865,7 +1865,8 @@ export function MacbookShowcase() {
               >
                 <ambientLight intensity={0.4} />
                 <Suspense fallback={null}>
-                  <Environment preset="studio" />
+                  {/* <Environment preset="studio" /> */}
+                  <Environment files="/studio_small_03_1k.hdr" />
                   <Laptop
                     progress={scrollYProgress}
                     reduce={reduce}
